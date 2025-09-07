@@ -1,0 +1,18 @@
+# Exclude Claude Code documentation
+CLAUDE.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
