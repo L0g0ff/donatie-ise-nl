@@ -138,6 +138,56 @@
             font-weight: 600;
             margin-top: 8px;
         }
+
+        .video-section {
+            background: linear-gradient(135deg, #fff8f8 0%, #fef2f2 100%);
+            padding: 32px;
+            border-radius: 16px;
+            margin: 32px 0;
+            border: 2px solid #fbb6ce;
+            text-align: center;
+        }
+
+        .video-section h3 {
+            color: #d53f8c;
+            margin-bottom: 24px;
+            font-size: 1.5em;
+        }
+
+        .video-container {
+            position: relative;
+            max-width: 350px; /* Slightly smaller to reduce black bars */
+            margin: 24px auto; /* Center the video */
+            height: 600px; /* Fixed height instead of percentage */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(213, 63, 140, 0.15);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: -60px; /* Crop top black bar */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 120px); /* Extend height to crop black bars */
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .video-section {
+                padding: 20px;
+            }
+
+            .video-container {
+                max-width: 280px; /* Smaller on mobile */
+                height: 480px; /* Proportional height for mobile */
+            }
+
+            .video-container iframe {
+                top: -50px; /* Less crop on mobile */
+                height: calc(100% + 100px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -180,6 +230,20 @@
                 <p><strong>NOW IT'S PARTY TIME!!!!! HOU DE SITE IN DE GATEN OM HAAR REACTIE TE ZIEN EN MEE TE GENIETEN VAN ALLE MOOIS WAT ZE DANKZIJ JULLIE ALLEMAAL KAN GAAN BELEVEN!!!</strong></p>
                 <p>🙏🙏🙏🥳🎉🥳🎉❤️😘🥰❤️😘🥰❤️😘🥰</p>
                 <p class="signature"><strong>- Bas van Alphen</strong></p>
+            </div>
+
+            <div class="video-section">
+                <h3>🎬 Het moment dat Ise het bedrag te horen kreeg:</h3>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/QTc7qG6wO0w"
+                        title="Ise krijgt het donatiebedrag te horen"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p><em>Bekijk hier de prachtige reactie van Ise toen ze hoorde hoeveel er voor haar was opgehaald! ❤️</em></p>
             </div>
             
             <div class="story-update">
